@@ -51,7 +51,7 @@ mod tests {
 
   #[test]
   fn examples() {
-    assert_eq!(spin_words("Welcome"), "emocleWee");
+    assert_eq!(spin_words("Welcome"), "emocleW");
     assert_eq!(spin_words("Hey fellow warriors"), "Hey wollef sroirraw");
     assert_eq!(spin_words("This is a test"), "This is a test");
     assert_eq!(spin_words("This is another test"), "This is rehtona test");

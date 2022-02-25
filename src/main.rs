@@ -1,8 +1,9 @@
 mod kattas;
 
-pub use crate::kattas::{ease_the_stock_broker, word_spinner};
+pub use crate::kattas::{bool_to_word, ease_the_stock_broker, word_spinner};
 
 fn main() {
+    /*
     let phrase = String::from("Welcome travelers! This is Sparta.");
     let spinned_phrase = word_spinner::spin_words(&phrase);
 
@@ -12,4 +13,11 @@ fn main() {
     let order_summary = ease_the_stock_broker::balance_statement(&multiple_order);
 
     println!("order summary: {}", order_summary);
+    */
+
+    println!(
+        "bool_to_word result: true = {}, false = {}",
+        bool_to_word::bool_to_word(true),
+        bool_to_word::bool_to_word(false)
+    )
 }
