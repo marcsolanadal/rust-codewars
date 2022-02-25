@@ -134,6 +134,7 @@ mod tests {
   }
 
   #[test]
+  #[ignore]
   fn simple_order_malformed() {
     let order_string = "GOOG 542.0 300 L";
     let order = SimpleOrder::create(order_string);
