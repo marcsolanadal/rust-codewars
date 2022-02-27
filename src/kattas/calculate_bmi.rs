@@ -7,22 +7,21 @@ if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
 */
 
-/*
 // PREFERRED SOLUTION
-fn bmi(weight: u32, height: f32) -> &'static str {
-    let index = weight as f32 / height.powi(2);
-    match index {
-        index if index <= 18.5 => "Underweight",
-        index if index <= 25.0 => "Normal",
-        index if index <= 30.0 => "Overweight",
-        _ => "Obese"
-    }
+pub fn bmi(weight: u32, height: f32) -> &'static str {
+  let index = weight as f32 / height.powi(2);
+  match index {
+    _ if index <= 18.5 => "Underweight",
+    _ if index <= 25.0 => "Normal",
+    _ if index <= 30.0 => "Overweight",
+    _ => "Obese",
+  }
 }
-*/
 
 // To avoid the warnings we need to use guards instead to float ranges
-
-fn bmi(weight: u32, height: f32) -> &'static str {
+/*
+// MY SOLUTION
+pub fn bmi(weight: u32, height: f32) -> &'static str {
   let bmi = weight as f32 / (height * height);
   match bmi {
     0.0..=18.4 => "Underweight",
@@ -31,6 +30,7 @@ fn bmi(weight: u32, height: f32) -> &'static str {
     _ => "Obese",
   }
 }
+*/
 
 #[cfg(test)]
 mod tests {

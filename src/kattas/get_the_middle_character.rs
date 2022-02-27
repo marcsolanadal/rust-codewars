@@ -25,7 +25,7 @@ fn get_middle(s:&str) -> &str {
 }
 */
 
-fn get_middle(s: &str) -> &str {
+pub fn get_middle(s: &str) -> &str {
   let half = s.len() / 2;
   match s.len() % 2 {
     0 => &s[half - 1..half + 1],
