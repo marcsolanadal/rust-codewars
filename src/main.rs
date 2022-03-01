@@ -2,7 +2,7 @@ mod kattas;
 
 pub use crate::kattas::{
     bool_to_word, calculate_bmi, ease_the_stock_broker, errors_histogram, get_the_middle_character,
-    who_likes_it, word_spinner,
+    who_likes_it, word_spinner, your_order_please,
 };
 
 fn main() {

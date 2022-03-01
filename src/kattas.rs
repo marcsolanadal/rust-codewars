@@ -5,3 +5,4 @@ pub mod errors_histogram;
 pub mod get_the_middle_character;
 pub mod who_likes_it;
 pub mod word_spinner;
+pub mod your_order_please;
